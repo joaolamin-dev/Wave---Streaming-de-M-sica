@@ -1,0 +1,154 @@
+/* reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* gradiente e animação suave */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #2c003e, #7a1e78, #ff00cc);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;  
+  flex-direction: column; /* empurra rodapé pra baixo */
+}
+
+/* rodapé */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* página geral do login */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+/* centraliza conteúdo dentro da página */
+.content {
+  text-align: center;
+}
+
+/* logo redonda */
+.logo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* título principal */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* espaçamento geral dos grupos de input */
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/* campo de entrada com padding pro ícone e fundo branco */
+.input-group input {
+  width: 100%;
+  padding: 0.9rem 2.5rem 0.9rem 2.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: white; 
+  color: #333;
+  font-size: 1rem;
+}
+
+/* ícone de bonequinho ou cadeado (esquerda) */
+.input-group .icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 1rem;
+}
+
+/* ícone de mostrar/esconder senha (olhinho - direita) */
+.input-group .toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* link "esqueceu a senha" */
+.forgot-password {
+  display: block;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 0.9rem;
+  color: #e0f7ff;
+  text-decoration: none;
+}
+
+/* botões gerais */
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* botão de login escuro */
+.login {
+  background-color: #2d0e4c;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* animação hover no login (quando passa o mouse em cima) */
+.login:hover {
+  background-color: #4a1d7c;
+  transform: scale(1.1);
+}
+
+/* separador "ou" */
+.ou {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* botão de criar conta com gradiente */
+.criar-conta {
+  background: linear-gradient(to right, #E0B3FF, #9A60F3);
+  color: white;
+}
+
+/* efeitos ao passar o mouse no criar conta */
+.criar-conta:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* animação de entrada da tela */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

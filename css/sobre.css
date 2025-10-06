@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #2c003e, #7a1e78, #ff00cc);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* deixa body como coluna */
+}
+
+/* logo no canto superior esquerdo */
+.logo-container {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* conteúdo principal */
+.sobre-container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin: 100px auto 40px auto; /* espaço do topo (por causa da logo) */
+  flex: 1; /* ocupa o espaço restante e empurra o rodapé */
+}
+
+.titulo-central {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.titulo-central h1 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.texto {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.foto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-item img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.foto-item img:hover {
+  transform: scale(1.05);
+}
+
+.foto-item p {
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* rodapé no final da página */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #f0f0f0;
+  margin-top: auto;
+}
+
+  
+  
+  

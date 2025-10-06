@@ -1,0 +1,124 @@
+/* reset geral */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2c003e, #7a1e78, #ff00cc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #340258;
+  padding: 10px 40px; /* slim */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-link .logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff00cc;
+}
+
+/* ===== MAIN ===== */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background-color: rgb(56, 0, 61);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* labels */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* inputs e textarea */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #333;
+}
+
+form textarea {
+  resize: none;
+}
+
+/* botão */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #44034d;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b40aca;
+}
+
+/* rodapé fixado */
+.footer {
+  background-color: #340258;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #f0f0f0;
+}

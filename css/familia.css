@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right,#2c003e,#7a1e78,#ff00cc);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #340258;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-link .logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff00cc;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* ---------- FORM ---------- */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container input[type="month"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: #ff00cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #91036d;
+}
+
+/* ---------- BENEFÍCIOS ---------- */
+.benefits {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin: 40px auto 20px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.benefits h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ff00cc;
+  font-weight: bold;
+}
+
+/* ---------- PREÇO ---------- */
+.preco-premium {
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.preco-label {
+  display: block;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.preco-valor {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #340258;
+  font-size: 14px;
+  margin-top: 40px;
+  color: #f0f0f0;
+}

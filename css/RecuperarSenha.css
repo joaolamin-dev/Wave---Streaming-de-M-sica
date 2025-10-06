@@ -1,0 +1,108 @@
+/* reset básico da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* corpo com gradiente e animação suave de entrada */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #2c003e, #7a1e78, #ff00cc);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+  flex-direction: column; /* pra empurrar o rodapé pra baixo */
+}
+
+/* rodapé com texto centralizado */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* caixa principal da página */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+/* centraliza conteúdo dentro da caixa */
+.content {
+  text-align: center;
+}
+
+/* logo redonda */
+.logo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* título da tela */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* parágrafo explicando a recuperação */
+.descricao {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #e0f7ff;
+}
+
+/* grupo de input com espaçamento inferior */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+/* estilo do campo de e-mail */
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* estilo geral do botão */
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* botão de enviar fundo */
+.recuperar {
+  background-color: #2d0e4c;
+  color: white;
+}
+
+/* efeito no hover do botão */
+.recuperar:hover {
+  transform: scale(1.05);
+  background-color: #4a1d7c;
+}
+
+/* animação para aparecer suavemente */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

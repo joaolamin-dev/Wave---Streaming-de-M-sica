@@ -1,0 +1,208 @@
+/* reset geral pra tirar margens e espaçamentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilo do corpo com fundo roxo degradê e animação suave */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #4b0082, #da70d6, #f8b6ff);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+  position: relative;
+  padding-bottom: 60px; /* Espaço para o footer */
+}
+
+/* rodapé com texto centralizado e cor clara */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+/* container principal da tela de cadastro */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+}
+
+/* centraliza tudo dentro do container */
+.content {
+  text-align: center;
+}
+
+/* logo pequena usada no topo da tela de cadastro */
+.logo.pequeno {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* título principal e subtítulos das etapas */
+h2, h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+/* espaço entre os grupos de inputs */
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+  position: relative;
+}
+
+/* estilo dos campos de texto e select */
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.8rem 0.8rem 0.8rem 40px; /* Mais padding à esquerda para o ícone */
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ícones dentro dos campos de senha */
+.input-group .fa-lock {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* ícone de olho para mostrar/esconder senha */
+.toggle-password,
+.toggle-password-confirmar {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  cursor: pointer;
+}
+
+/* texto explicativo abaixo dos inputs (dicas) */
+.input-group small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+}
+
+/* rótulo do input como "Gênero" ou "Data de nascimento" */
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* inputs de data lado a lado */
+.data-nascimento {
+  display: flex;
+  gap: 10px;
+}
+
+/* centraliza os valores dos campos de data */
+.data-nascimento input {
+  text-align: center;
+  padding-left: 0.8rem !important; /* Sobrescreve o padding para campos de data */
+}
+
+/* estilo geral dos botões */
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* dicas de senha na etapa 2 */
+.criterios-senha {
+  text-align: left;
+  margin: 15px 0;
+  padding-left: 5px;
+}
+
+.criterios-senha p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* botão de cadastrar com gradiente roxo/rosa */
+.cadastrar {
+  background: linear-gradient(to right, #ff00cc, #3f0343);
+  color: white;
+  margin-top: 1rem;
+}
+
+/* efeito hover no botão cadastrar */
+.cadastrar:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* bloco com botões sociais (Google, Facebook, Apple) */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+/* estilo dos botões sociais */
+.social-login .btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ícones dentro dos botões sociais */
+.social-login .btn i {
+  font-size: 1.2rem;
+}
+
+/* separador "ou" entre login social e e-mail */
+.ou {
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* mensagem de erro para senhas não coincidentes */
+#erro-confirmacao {
+  color: #ff6666;
+  display: none;
+  text-align: left;
+  margin: 5px 0 10px 0;
+  font-size: 0.9rem;
+}
+
+/* animação de entrada da tela */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
