@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wave Free - Wave</title>
+  <link rel="stylesheet" href="css/free.css" />
+</head>
+<body>
+  <header>
+    <a href="Homepage.html" class="logo-link">
+      <img src="img/Logo.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <a href="Homepage.html">Início</a>
+      <a href="empregos.html">Empregos</a>
+      <a href="suporte.html">Suporte</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <h1>Plano Wave Free</h1>
+    <p>Preencha o formulário para assinar o Wave Free!</p>
+    
+    <div class="benefits">
+      <h2>Plano Wave Free</h2>
+      <ul>
+        <li>🎵 Acesso ilimitado a músicas COM anúncios</li>
+        <li>🚫⬇️ Sem downloads para ouvir offline</li>
+        <li>🔴 Apenas assistir as transmissões, sem comentários</li>
+        <li>🔁 Limite de 5 trocas de faixa por dia</li>
+        <li>🎤 Sem acesso a benefícios de artista</li>
+      </ul>
+    </div>    
+
+    <div class="preco-premium">
+      <span class="preco-label">Apenas</span>
+      <span class="preco-valor">R$ 0,00/mês</span>
+    </div>
+  </section>
+
+    <div class="form-container">
+      <form id="premiumForm">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tel">Celular:</label>
+        <input type="tel" id="tel" name="tel" required />
+        
+        <label>
+          <input type="checkbox" id="termos" />
+          Aceito os termos e condições
+        </label>
+
+        <button class="btn" type="submit">Assinar o Wave Free</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wave. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("premiumForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const tel = document.getElementById("tel").value.trim();
+      const termosAceitos = document.getElementById("termos").checked;
+
+      if (!nome || !email) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      if (!termosAceitos) {
+        alert("Você precisa aceitar os termos e condições.");
+        return;
+      }
+
+      alert(`Obrigado, ${nome}! Sua assinatura Wave Free foi confirmada! 🎧`);
+    });
+  </script>
+</body>
+</html>

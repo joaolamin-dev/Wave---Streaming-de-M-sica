@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wave - Linkin Park</title>
+  <link rel="stylesheet" href="css/Linkin_park.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="Homepage.html">
+        <img src="img/Logo_HomePage_Sem_Fundo.png" alt="Logo Wave">
+      </a>
+    </div>
+    <input type="text" class="search-bar" placeholder="Pesquise aqui seu artista favorito">
+    <nav class="navbar-links">
+      <a class="navbar-item" href="Homepage.html">Home</a>
+      <a class="navbar-item" href="cadastro.html">Entre na Onda</a>
+      <a class="navbar-item" href="login.html">Login</a>
+      <a class="navbar-item" href="premium.html">Seja Premium</a>
+    </nav>
+  </header>
+
+  <main class="artista-container">
+    <section class="artista-info">
+      <img class="artista-img" src="img/linkin01.jpg" alt="Linkin Park">
+      <img class="artista-img" src="img/linkin02.jpg" alt="Linkin Park">
+      <img class="artista-img" src="img/linkin03.jpg" alt="Linkin Park">
+      <div class="descricao">
+        <h1>Linkin Park</h1>
+        <p>
+          Linkin Park foi uma das bandas mais influentes do rock alternativo e nu metal, misturando guitarras pesadas, rap e eletrônica. Com hits como “In the End” e “Numb”, marcou gerações com letras intensas e som poderoso, tornando-se um ícone dos anos 2000.
+        </p>
+      </div>
+    </section>
+
+    <!-- Discografia com carrossel infinito -->
+    <section class="discografia">
+      <h2>Discografia</h2>
+      <div class="albuns-carousel">
+        <div class="albuns-track">
+          <div class="album-item">
+            <img src="img/HybridTheory.jpg" alt="Hybrid Theory">
+            <span>Hybrid Theory</span>
+          </div>
+          <div class="album-item">
+            <img src="img/FromZero.jpg" alt="From Zero">
+            <span>From Zero</span>
+          </div>
+          <div class="album-item">
+            <img src="img/meteora.jpg" alt="Meteora">
+            <span>Meteora</span>
+          </div>
+          <div class="album-item">
+            <img src="img/onemorelight.jpg" alt="One More Light">
+            <span>One More Light</span>
+          </div>
+          <div class="album-item">
+            <img src="img/minutesto.jpg" alt="Minutes to Midnight">
+            <span>Minutes to Midnight</span>
+          </div>
+          <div class="album-item">
+            <img src="img/liveintexas.jpg" alt="Live in Texas">
+            <span>Live in Texas</span>
+          </div>
+          <div class="album-item">
+            <img src="img/livingthings.jpg" alt="Living Things">
+            <span>Living Things</span>
+          </div>
+          <!-- duplicados para efeito infinito -->
+          <div class="album-item">
+            <img src="img/HybridTheory.jpg" alt="Hybrid Theory">
+            <span>Hybrid Theory</span>
+          </div>
+          <div class="album-item">
+            <img src="img/FromZero.jpg" alt="From Zero">
+            <span>From Zero</span>
+          </div>
+          <div class="album-item">
+            <img src="img/meteora.jpg" alt="Meteora">
+            <span>Meteora</span>
+          </div>
+          <div class="album-item">
+            <img src="img/onemorelight.jpg" alt="One More Light">
+            <span>One More Light</span>
+          </div>
+          <div class="album-item">
+            <img src="img/minutesto.jpg" alt="Minutes to Midnight">
+            <span>Minutes to Midnight</span>
+          </div>
+          <div class="album-item">
+            <img src="img/liveintexas.jpg" alt="Live in Texas">
+            <span>Live in Texas</span>
+          </div>
+          <div class="album-item">
+            <img src="img/livingthings.jpg" alt="Living Things">
+            <span>Living Things</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mais tocadas -->
+    <section class="discografia">
+      <h2>Mais tocadas</h2>
+      <ul class="music-list" id="playlist">
+        <li data-src="mp3/The_Emptiness_Machine.mp3">The Emptiness Machine</li>
+        <li data-src="mp3/Heavy_Is_the_Crown.mp3">Heavy Is The Crown</li>
+        <li data-src="mp3/Faint.mp3">Faint</li>
+      </ul>
+
+      <div class="player-container">
+        <p id="now-playing">Nenhuma música em reprodução</p>
+        <audio id="audio-player" controls></audio>
+        <div class="player-controls">
+          <button id="prev-btn">⏮ Anterior</button>
+          <button id="next-btn">⏭ Próxima</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape-principal">
+    <div class="footer-conteudo">
+      <div>
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="empregos.html">Empregos</a></li>
+        </ul>
+      </div>
+
+      <div class="planos">
+        <h4>Planos do Wave</h4>
+        <ul>
+          <li><a href="premium.html">Wave Premium</a></li>
+          <li><a href="familia.html">Wave Família</a></li>
+          <li><a href="universitario.html">Wave Universitário</a></li>
+          <li><a href="free.html">Wave Free</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="suporte.html">Suporte</a></li>
+          <li><a href="movel.html">Aplicativo Móvel</a></li>
+        </ul>
+      </div>
+
+      <div class="redes-sociais">
+        <a class="redes-sociais_logo" href="https://www.instagram.com/wavemusic.stream"><img src="img/Intagram_logo.png" alt="Instagram" width="24"></a>
+        <a class="redes-sociais_logo" href="https://x.com/Wavemusicstream"><img src="img/twitter_logo.png" alt="Twitter" width="24"></a>
+      </div>
+    </div>
+
+    <div class="direitos-autorais">
+      &copy; 2025 Wave. Todos os direitos reservados
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audioPlayer = document.getElementById('audio-player');
+      const playlistItems = document.querySelectorAll('#playlist li');
+      const nowPlaying = document.getElementById('now-playing');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      let currentIndex = 0;
+
+      const playlist = Array.from(playlistItems).map((item, index) => ({
+        name: item.textContent.trim(),
+        src: item.getAttribute('data-src'),
+        element: item
+      }));
+
+      function playMusic(index) {
+        const music = playlist[index];
+        if (!music) return;
+
+        currentIndex = index;
+        audioPlayer.src = music.src;
+        audioPlayer.play();
+        nowPlaying.textContent = `Tocando agora: ${music.name}`;
+
+        playlist.forEach((m, i) => {
+          m.element.style.fontWeight = i === index ? 'bold' : 'normal';
+        });
+      }
+
+      playlistItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          playMusic(index);
+        });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        const prevIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+        playMusic(prevIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        const nextIndex = (currentIndex + 1) % playlist.length;
+        playMusic(nextIndex);
+      });
+
+      audioPlayer.addEventListener('ended', () => {
+        const nextIndex = (currentIndex + 1) % playlist.length;
+        playMusic(nextIndex);
+      });
+
+      nowPlaying.textContent = "Selecione uma das mais tocadas!";
+    });
+  </script>
+
+</body>
+</html>

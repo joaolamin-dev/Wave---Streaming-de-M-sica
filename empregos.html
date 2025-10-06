@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Candidato</title>
+  <link rel="stylesheet" href="css/empregos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <a href="Homepage.html" class="logo-link">
+      <img src="img/Logo.png" alt="Logo Wave" class="logo">
+    </a>
+    <nav>
+      <a href="Homepage.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Cadastro de Candidato</h1>
+
+      <form id="form-emprego" action="processa_emprego.php" method="POST">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="cargo">Cargo desejado:</label>
+        <input type="text" id="cargo" name="cargo" required>
+
+        <label for="curriculo">Currículo (URL ou link para PDF):</label>
+        <input type="url" id="curriculo" name="curriculo" placeholder="https://exemplo.com/seu-curriculo.pdf">
+
+        <label for="apresentacao">Apresentação pessoal:</label>
+        <textarea id="apresentacao" name="apresentacao" rows="5" placeholder="Fale um pouco sobre você..." required></textarea>
+
+        <button type="submit">Enviar Candidatura</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER igual ao suporte -->
+  <footer class="footer">
+    &copy; 2025 Wave. Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
