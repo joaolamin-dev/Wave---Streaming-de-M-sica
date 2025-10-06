@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suporte</title>
+  <link rel="stylesheet" href="css/suporte.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- header igual da página sobre -->
+  <header>
+      <a href="Homepage.html" class="logo-link">
+    <img src="img/íconeWave.png" alt="Logo Wave" class="logo">
+  </a>
+    <nav>
+      <a href="Homepage.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Suporte Técnico</h1>
+      <form id="form-suporte" action="processa_suporte.php" method="POST">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="telefone">Telefone:</label>
+  <input type="tel" id="telefone" name="telefone" required>
+
+  <label for="problema">Descreva o problema:</label>
+  <textarea id="problema" name="problema" rows="5" required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+
+
+      <div class="mensagem-confirmacao" id="mensagem">
+        Recebemos seu pedido! Em breve nossa equipe técnica entrará em contato.
+      </div>
+    </div>
+  </main>
+
+  <!-- rodapé -->
+  <footer class="footer">
+    &copy; 2025 Wave. Todos os direitos reservados
+  </footer>
+
+</body>
+</html>

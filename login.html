@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Wave</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <img src="img/logocomtítulo.jpg" alt="Logo Wave" class="logo" />
+      <h2>ENTRE NA ONDA</h2>
+
+      <form action="processa_login.php" method="POST">
+        <div class="input-group">
+          <i class="fas fa-user icon"></i>
+          <input type="text" id="emailLogin" name="email" placeholder="Email ou usuário" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock icon"></i>
+          <input type="password" id="senhaLogin" name="senha" placeholder="Senha" required />
+          <i class="fas fa-eye toggle-password" onclick="togglePassword()"></i>
+        </div>
+
+        <a href="RecuperarSenha.html" class="forgot-password">Esqueceu a senha?</a>
+
+        <button type="submit" class="btn login">Login</button>
+
+        <span class="ou">Ou</span>
+
+        <button type="button" class="btn criar-conta" onclick="window.location.href='cadastro.html'">Criar uma conta</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Wave. Todos os direitos reservados
+  </footer>
+
+<script>
+  function togglePassword() {
+    const senha = document.getElementById("senhaLogin");
+    const toggle = document.querySelector(".toggle-password");
+    if (senha.type === "password") {
+      senha.type = "text";
+      toggle.classList.remove("fa-eye");
+      toggle.classList.add("fa-eye-slash");
+    } else {
+      senha.type = "password";
+      toggle.classList.remove("fa-eye-slash");
+      toggle.classList.add("fa-eye");
+    }
+  }
+
+  // Mensagem após o cadastro
+  document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('cadastro') === '1') {
+      const notice = document.createElement('div');
+      notice.className = 'success-message';
+      notice.textContent = '✅ Cadastro realizado com sucesso! Faça login.';
+      const content = document.querySelector('.content');
+      content.insertBefore(notice, content.firstChild);
+    }
+  });
+</script>
+</body>
+</html>

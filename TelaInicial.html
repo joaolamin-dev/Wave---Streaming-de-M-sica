@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave - Início</title>
+
+  <!-- css da tela inicial -->
+  <link rel="stylesheet" href="css/EstiloTelaInicial.css">
+</head>
+<body>
+  <!-- logo do Wave -->
+  <img src="img/logocomtítulo.jpg" alt="Logo Wave" class="logo" />
+
+  <!-- botão que leva pro login -->
+  <button class="botao-entrar" onclick="irParaLogin()">Entre na Onda</button>
+
+  <!-- script pra redirecionar pra login.html -->
+  <script>
+    function irParaLogin() {
+      window.location.href = 'login.html';
+    }
+  </script>
+
+  <!-- rodapé com direitos autorais -->
+  <footer class="footer">
+    &copy; 2025 Wave. Todos os direitos reservados
+  </footer>  
+</body>
+</html>

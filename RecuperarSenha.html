@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Senha - Wave</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/RecuperarSenha.css">
+
+  <!-- fonte Poppins usada no projeto -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- container principal da página -->
+  <div class="container">
+    <div class="content">
+
+      <!-- logo do Wave -->
+      <img src="img/logocomtítulo.jpg" alt="Logo Wave" class="logo" />
+
+      <!-- título da tela -->
+      <h2>RECUPERAR SENHA</h2>
+
+      <!-- instrução para o usuário -->
+      <p class="descricao">Informe seu e-mail para receber um link de redefinição de senha.</p>
+
+      <!-- formulário de recuperação -->
+      <form onsubmit="return simularRecuperacao(event)">
+        <div class="input-group">
+          <input type="email" placeholder="Digite seu e-mail" required />
+        </div>
+
+        <!-- botão enviar e-mail -->
+        <button type="submit" class="btn recuperar">Enviar link</button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- script que simula envio e volta pro login -->
+  <script>
+    function simularRecuperacao(event) {
+      event.preventDefault();
+      alert("Um link de recuperação foi enviado. Volte ao login.");
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <!-- rodapé com direitos autorais -->
+  <footer class="footer">
+    &copy; 2025 Wave. Todos os direitos reservados
+  </footer>  
+
+</body>
+</html>

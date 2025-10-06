@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wave Universitário - Wave</title>
+  <link rel="stylesheet" href="css/universitario.css" />
+</head>
+<body>
+  <header>
+    <a href="Homepage.html" class="logo-link">
+      <img src="img/Logo.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <a href="Homepage.html">Início</a>
+      <a href="empregos.html">Empregos</a>
+      <a href="suporte.html">Suporte</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <h1>Plano Wave Universitário</h1>
+    <p>Preencha o formulário para assinar o Wave Universitário!</p>
+    
+    <div class="benefits">
+      <h2>Vantagens do Wave Universitário</h2>
+      <ul>
+        <li>🎵 Acesso ilimitado a músicas sem anúncios</li>
+        <li>⬇️ Downloads para ouvir offline</li>
+        <li>🔴 Comentários em transmissões ao vivo</li>
+        <li>🔁 Pular faixas ilimitadamente</li>
+        <li>💵 50% de desconto</li>
+        <li>🕒 Válido durante duração do curso</li>
+      </ul>
+    </div>    
+
+    <div class="preco-premium">
+      <span class="preco-label">Apenas</span>
+      <span class="preco-valor">R$ 9,90/mês</span>
+    </div>
+  </section>
+
+    <div class="form-container">
+      <form id="premiumForm">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="RA">RA:</label>
+        <input type="number" id="RA" name="RA" required />
+
+        <label for="cpf">CPF:</label>
+        <input type="number" id="cpf" name="cpf" required />
+
+        <label for="cartao">Número do Cartão:</label>
+        <input type="number" id="cartao" name="cartao" required />
+
+        <label for="cvv">CVV:</label>
+        <input type="number" id="cvv" name="cvv" required />
+
+        <label for="date">Data de validade:</label>
+        <input type="month" id="date" name="date" required />
+
+        <label>
+          <input type="checkbox" id="termos" />
+          Aceito os termos e condições
+        </label>
+
+        <button class="btn" type="submit">Assinar o Universitário</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wave. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("premiumForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const RA = document.getElementById("RA").value.trim();
+      const cpf = document.getElementById("cpf").value.trim();
+      const cartao = document.getElementById("cartao").value.trim();
+      const cvv = document.getElementById("cvv").value.trim();
+      const date = document.getElementById("date").value.trim();
+      const termosAceitos = document.getElementById("termos").checked;
+
+      if (!nome || !email) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      if (!termosAceitos) {
+        alert("Você precisa aceitar os termos e condições.");
+        return;
+      }
+
+      alert(`Obrigado, ${nome}! Sua assinatura o Wave Universitário foi confirmada! 🎧`);
+    });
+  </script>
+</body>
+</html>
